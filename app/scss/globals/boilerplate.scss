@@ -1,0 +1,49 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-inter);
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text-color);
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --text-color: var(--dark-text2);
+  --text-color2: var(--dark-text1);
+  --card-bg: var(--dark-card);
+  --card-hover: var(--dark-card-hover);
+  --toggle: var(--Light-bg);
+  --toggle-bg: linear-gradient(
+    225deg,
+    var(--toggle-bg-start),
+    var(--toggle-bg-end)
+  );
+  --toggle-btn: var(--dark-bg);
+}
+body.light {
+  --bg: var(--Light-bg);
+  --text-color: var(--Light-text2);
+  --text-color2: var(--Light-text1);
+  --card-bg: var(--Light-card);
+  --card-hover: var(--Light-card-hover);
+  --toggle: var(--text-color2);
+  --toggle-bg: var(--toggle-bg-light);
+  --toggle-btn: var(--light-btn);
+}
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
