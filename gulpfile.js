@@ -1,13 +1,13 @@
 // Initialize modules
 
-const { src, dest, watch, series } = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-const browserSync = require("browser-sync").create();
-const postcss = require("gulp-postcss");
-const autoprefixer = require("autoprefixer");
-const cssnano = require("cssnano");
-const babel = require("gulp-babel");
-const terser = require("gulp-terser");
+const { src, dest, watch, series } = require("gulp"); /// gulp is a toolkit that helps you automate painful or time-consuming tasks in your development workflow
+const sass = require("gulp-sass")(require("sass")); /// gulp-sass is a tool that helps compile Sass to CSS
+const browserSync = require("browser-sync").create(); /// browser-sync is a tool that helps synchronize code changes and interactions across multiple devices
+const postcss = require("gulp-postcss"); /// postcss is a tool for transforming CSS with JavaScript plugins
+const autoprefixer = require("autoprefixer"); /// autoprefixer is a plugin for PostCSS that helps add vendor prefixes to your CSS
+const cssnano = require("cssnano"); /// cssnano is a tool that helps optimize and compress your CSS files
+const babel = require("gulp-babel"); /// gulp-babel is a tool that helps compile JavaScript ES6 to ES5
+const terser = require("gulp-terser"); /// gulp-terser is a tool that helps minify JavaScript files
 
 // Sass Task
 function scssTask() {
